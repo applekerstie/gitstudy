@@ -115,3 +115,18 @@ git remote rm origin
 git push origin master
 ```
 
+# 12. clone : 복제
+```
+mkdir gitstudy_clone 
+cd gitstudy_clone
+
+git clone https://github.com/applekerstie/gitstudy.git .
+
+$ git remote -v
+origin  https://github.com/applekerstie/gitstudy.git (fetch)
+origin  https://github.com/applekerstie/gitstudy.git (push)
+```
+
+# 13. pull : 서버에서 내려받기
+
+
