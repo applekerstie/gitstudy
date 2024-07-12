@@ -127,6 +127,28 @@ origin  https://github.com/applekerstie/gitstudy.git (fetch)
 origin  https://github.com/applekerstie/gitstudy.git (push)
 ```
 
-# 13. pull : 서버에서 내려받기
+# 13. 서버에서 내려받기
+```
+# pull : 내려 받은 최신 커밋들을 현재 브랜치로 자동으로 병합처리
+git pull
+
+# fetch : 커밋된 코드들을 임시 브랜치로 내려받고 현재 브랜치와 자동 병합하지 않음
+git fetch
+git merge origin/master 
+```
+
+# 14. 브랜치
+```
+# 현재 브랜치 확인
+git branch -v
+
+# 지정한 커밋 ID 기준으로 브랜치 생성
+git branch 브랜치이름 커밋ID
+
+#가장 마지막 커밋을 기준으로 브랜치 생성
+git branch 브랜치이름
+```
+
+
 
 
