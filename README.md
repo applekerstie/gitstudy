@@ -137,7 +137,7 @@ git fetch
 git merge origin/master 
 ```
 
-# 14. 브랜치
+# 14-1. 브랜치
 ```
 # 현재 브랜치 확인
 git branch -v
@@ -150,7 +150,10 @@ git branch 브랜치이름 커밋ID
 
 # 가장 마지막 커밋을 기준으로 브랜치 생성
 git branch 브랜치이름
+```
 
+# 14-2. 브랜치
+```
 # 브랜치 이동
 git checkout 브랜치이름
 
@@ -162,8 +165,10 @@ git log --graph --all
 
 # 새 브랜치를 생성하며 체크아웃 하기
 git checkout -b 브랜치이름
-```
 
+# 지정한 커밋위치로 체크아웃
+git checkout 커밋해시키
+```
 
 
 
