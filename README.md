@@ -163,11 +163,43 @@ git checkout 브랜치이름
 # 로그를 텍스트 그래프로 출력
 git log --graph --all 
 
-# 새 브랜치를 생성하며 체크아웃 하기
+# (현재브랜치 기준으로) 새 브랜치를 생성하며 체크아웃 하기
 git checkout -b 브랜치이름
 
 # 지정한 커밋위치로 체크아웃
 git checkout 커밋해시키
+```
+
+# 15-1. 리모트브랜치
+```
+# 로컬에서 브랜치 생성 후 푸시하여 리모트브랜치 생성
+git branch real
+git push origin real
+
+# 업스트림
+git push -u origin real
+로컬real을 원격origin의 real에 push하면서 upstream으로 설정함
+
+upstream : 현재 브랜치와 연결된 원격 브랜치를 설정함
+git push -u origin master 이후 git push, git pull 실행시 origin master 생략가능
+
+# 로컬의 feature를 원격의 function 브랜치로 푸시
+git push origin feature:function
+```
+
+# 15-2. 리모트브랜치
+```
+# 리모트브랜치 내용으로 로컬 저장소에 새 브랜치 생성
+git checkout -b 브랜치이름 origin/브랜치이름
+
+# 원격브랜치와 동일한 이름의 로컬브랜치를 생성
+git checkout --track origin/브랜치이름
+
+# 리모트 브랜치 목록 보기
+git branch -r
+
+# 로컬과 리모트 브랜치 목록 모두 보기
+git branch -a
 ```
 
 
