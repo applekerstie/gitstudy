@@ -202,7 +202,17 @@ git branch -r
 git branch -a
 ```
 
+# 16. 브랜치
+```
+# 로컬 브랜치 삭제
+git branch -d 브랜치이름
 
+# 커밋이 있는 로컬 브랜치 삭제
+git branch -D 브랜치이름
+
+# 리모트 브랜치 삭제
+git push origin --delete 리모트브랜치이름
+```
 
 
 
